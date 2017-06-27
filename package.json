@@ -4,7 +4,7 @@
   "description": "",
   "license": "ISC",
   "scripts": {
-    "build": "neutrino build --use neutrino-preset-node",
+    "build": "neutrino build --use neutrino-preset-node && cp src/package.json build && cd build && yarn",
     "check:node": "check-node-version --node \">=7.4.0 <8\"",
     "ci": "yarn check && yarn lint:js && yarn test",
     "clean": "rm -rf dist",
