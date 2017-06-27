@@ -74,14 +74,16 @@ module.exports =
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "onProjectQuery", function() { return onProjectQuery; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_firebase_functions__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_firebase_functions___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_firebase_functions__);
 
 
-let onProjectQuery = __WEBPACK_IMPORTED_MODULE_0_firebase_functions__["database"].ref('/projectQueries').onWrite(event => {
-  const data = event.data.val();
+const onProjectQuerify = __WEBPACK_IMPORTED_MODULE_0_firebase_functions__["database"].ref('/projectQueries').onWrite(event => {
+  // const data = event.data.val()
+  console.log(event);
 });
+/* harmony export (immutable) */ __webpack_exports__["onProjectQuerify"] = onProjectQuerify;
+
 
 /***/ }),
 
