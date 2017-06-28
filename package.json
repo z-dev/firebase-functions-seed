@@ -19,7 +19,7 @@
     "lint:without:prettier": "npm run lint:js:without:prettier",
     "start": "firebase serve --only functions",
     "test": "neutrino test --use neutrino-preset-node neutrino-preset-mocha",
-    "test:watch": "nodemon -w src -w test --exec 'yarn test'"
+    "test:watch": "nodemon -w src -w test --exec 'npm run test'"
   },
   "dependencies": {
     "firebase": "^4.1.3",
