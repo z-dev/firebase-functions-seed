@@ -78,6 +78,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_firebase_functions___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_firebase_functions__);
 
 
+// A function triggered by onWrite event to /projectQueries directory
 const onProjectQuery = __WEBPACK_IMPORTED_MODULE_0_firebase_functions__["database"].ref('/projectQueries').onWrite(event => {
   const data = event.data.val();
   console.log(data);
@@ -85,6 +86,7 @@ const onProjectQuery = __WEBPACK_IMPORTED_MODULE_0_firebase_functions__["databas
 /* harmony export (immutable) */ __webpack_exports__["onProjectQuery"] = onProjectQuery;
 
 
+// A HTTP triggered function
 const logRequest = __WEBPACK_IMPORTED_MODULE_0_firebase_functions__["https"].onRequest(request => {
   console.log(request);
 });

@@ -1,6 +1,7 @@
 ## Getting started
 
-First run: `npm install`
+Install Node Version 8+: nvm install node
+Install NPM: `npm install`
 
 Then run:
 
