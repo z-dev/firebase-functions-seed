@@ -85,10 +85,10 @@ const onProjectQuery = __WEBPACK_IMPORTED_MODULE_0_firebase_functions__["databas
 /* harmony export (immutable) */ __webpack_exports__["onProjectQuery"] = onProjectQuery;
 
 
-const date = __WEBPACK_IMPORTED_MODULE_0_firebase_functions__["https"].onRequest(request => {
+const logRequest = __WEBPACK_IMPORTED_MODULE_0_firebase_functions__["https"].onRequest(request => {
   console.log(request);
 });
-/* harmony export (immutable) */ __webpack_exports__["date"] = date;
+/* harmony export (immutable) */ __webpack_exports__["logRequest"] = logRequest;
 
 
 /***/ }),
