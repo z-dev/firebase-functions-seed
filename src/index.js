@@ -5,6 +5,6 @@ export const onProjectQuery = functions.database.ref('/projectQueries').onWrite(
   console.log(data)
 })
 
-export const date = functions.https.onRequest(request => {
+export const logRequest = functions.https.onRequest(request => {
   console.log(request)
 })
